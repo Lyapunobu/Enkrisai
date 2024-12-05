@@ -9,23 +9,17 @@ Aparatur
 Angkasa
 Bahagia
 Cahaya
-Damai
 Embun
 Harapan
-Jendela
 Kabut
 Lembut
 Mimpi
 Nusantara
 Ombak
 Pelangi
-Qadar
 Rindu
 Sajak
-Umbi
 Vaksin
-Waktu
-Yakin
 Anggur
 Bulan
 Citra
@@ -37,7 +31,6 @@ Inspirasi
 Jarak
 Kepulauan
 Lautan
-Mekar
 Perunggu
 Qalbu
 Rasa
@@ -45,8 +38,6 @@ Sinar
 Telaga
 Untaian
 Vakum
-Warna
-Yakult
 Zodiak
 Anggrek
 Bunga
@@ -121,4 +112,3 @@ Surga
 Tajam
 Ulang
 Venus
-Ziarah
