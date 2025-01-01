@@ -39,15 +39,10 @@ def passwordConfig():
                 continue
             elif inputSetting == 0:
                 break
-<<<<<<< HEAD
-        except ValueError:
-            print("Input tidak valid, tolong masukkan angka.")
-=======
             else:
                 print("\nTolong masukkan angka dari 0-4!")
         except ValueError:
             print("\nInput tidak valid, tolong masukkan angka.")
->>>>>>> c7277e4738891fc31adfacdc21e7276577a0848b
 
 def inputPasswordLength():
     while True:
