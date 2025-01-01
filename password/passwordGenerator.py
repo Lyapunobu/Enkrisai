@@ -1,9 +1,5 @@
 import secrets
 import string
-<<<<<<< HEAD
-
-from password.passwordConfig import inputPasswordLength, passwordConfig, uppercase, lowercase, numbers, punctuations
-=======
 import pyperclip
 
 # from password.passwordConfig import inputPasswordLength, passwordConfig, uppercase, lowercase, numbers, symbols
@@ -69,18 +65,13 @@ def inputPasswordLength():
         except ValueError:
             print("Tolong masukkan angka dari 8 sampai dengan 128.\n")
     return passwordLength
->>>>>>> c7277e4738891fc31adfacdc21e7276577a0848b
 
 def passwordGenerator():
 
     passwordLength = inputPasswordLength()
     passwordConfig()
 
-<<<<<<< HEAD
-    global uppercase, lowercase, numbers, punctuations
-=======
     global uppercase, lowercase, numbers, symbols
->>>>>>> c7277e4738891fc31adfacdc21e7276577a0848b
 
     charset = ""
     if uppercase:
@@ -89,15 +80,6 @@ def passwordGenerator():
         charset += string.ascii_lowercase
     if numbers:
         charset += string.digits
-<<<<<<< HEAD
-    if punctuations:
-        charset += string.punctuation
-
-    if not charset:
-        return "Setting kosong! Tidak ada karakter yang tersedia untuk membuat password."
-    
-    return print(f"\nPassword yang sudah dibuat:\n{''.join(secrets.choice(charset) for i in range(passwordLength))}")
-=======
     if symbols:
         charset += string.punctuation
 
@@ -110,4 +92,3 @@ def passwordGenerator():
 
     return print(f"\nPassword yang sudah dibuat:\n{generatedPassword}")
     # return print(f"\nPassword yang sudah dibuat:\n{''.join(secrets.choice(charset) for i in range(passwordLength))}")
->>>>>>> c7277e4738891fc31adfacdc21e7276577a0848b
