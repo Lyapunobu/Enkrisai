@@ -1,7 +1,7 @@
 import random
 
-namaHewan = "menu/models/generator/namaHewan.txt"
-kataSifat = "menu/models/generator/kataSifat.txt"
+namaHewan = "models/generator/namaHewan.txt"
+kataSifat = "models/generator/kataSifat.txt"
 
 entity = True
 adjective = True
