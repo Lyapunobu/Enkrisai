@@ -7,7 +7,7 @@ def hash_password(password):
 def verify_password(password, hashed):
     return bcrypt.checkpw(password.encode(), hashed)
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     password = input("Masukkan password: ")
     hashed = hash_password(password)
     print(f"Password hash: {hashed}")
