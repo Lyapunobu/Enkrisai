@@ -4,7 +4,7 @@ import string
 import json
 
 # Mengimpor fungsi dari file lain
-from password.passwordGenerator import passwordGenerator
+from controllers.passwordGenerator import passwordGenerator
 
 # Fungsi untuk menampilkan menu utama
 def password_menu():

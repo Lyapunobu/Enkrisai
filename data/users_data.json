@@ -3,6 +3,71 @@
         "password": "$2b$12$Ty6j/nOIVNdCFjQ6zhRpHehjef.i/QbjBQ4HhtVtRnCR/lX3qmI4S",
         "salt": "hP79c1dRZs8ZiclR78CE2Q==",
         "encrypted_key": "gAAAAABndhveAaIFdGFQ4Gk1vl08yFO6tQmX0Kt18w9wBPH7i5ONRrU8hbznk0a8cr_ykB5QAOzXjJhDc6zvRxzB3bu7OBBfKySZ6P4XdRZMUeeoXZK4cOxsH_9NLQQBjMyqtiAwZCjy",
+        "accounts": {
+            "12312": {
+                "username": "GGG",
+                "password": "gAAAAABndkT0_uP1dENb0mfv6NNxyttqFTrkE8FVYyuqkndNUbwUTs5bpCUQ13MEWfIp6yOi9PiVxL3z5hsk30UU6wXAnp26rQ=="
+            },
+            "AFJIAJ": {
+                "username": "okfok",
+                "password": "gAAAAABndkh5NomqPT_lUTaGtDbHuMGUv7lHpV6v51pZMCQ-08ln3RtgAl8hJMjCRmVcTiZeScY6WVFfiPiqOSCNDK1jdbzSxg=="
+            },
+            "Aowog": {
+                "username": "LlamaMembaca13",
+                "password": "gAAAAABndoKluej889zyUKKtQ-4H8p_pBFz3HkoLhwbaH7Xq8rp75cDkVJgSKdqXSZZKHLhsAL_FAG9I_pXjOwPExMKrf6LbxA=="
+            },
+            "asfalkf": {
+                "username": "PenguinAhli29",
+                "password": "gAAAAABndoMxoFnpxY1S_xLIrNUABViTLvjOBVOZ4N1BfV5C8fVKugq0pe89Kov2TP1MgxGsfu69YhAA-QQinULfD6GN7M24Dw=="
+            },
+            "asfg": {
+                "username": "Awooga",
+                "password": "gAAAAABndoNmab3eXav4LsNkD8Pg42SjD2rMW8aquRQ4dNXJU0o2DZdYmy_9grrmtq-cXNrsr3QoptR9szRWAWSRRXyKVeOKDw=="
+            }
+        }
+    },
+    "Anaqi": {
+        "password": "$2b$12$1LAhRmizCIfp70b.W2LGSOaIpHHbfdnA6js5UdHhbjqKKLAfsC15y",
+        "salt": "bmpwhxNoh+qNRqcVkBC5SA==",
+        "encrypted_key": "gAAAAABndj8jFcZt8DAuX_dWCC0QcSmqlR9mMZKBBd9lgHdQRq8JH0W_0pWzlNwvnfG-DjKuJgc1puOV7t9RGyvsGwRaU9gcuyU4Y7HIhJ5rZgrfAMuoWXWT9LRzIuTKj8BKWJA0_uc9",
+        "accounts": {
+            "Google": {
+                "username": "anaqi",
+                "password": "gAAAAABndj89T0NaR2cuiYgzW4-QIrB8GL0cw7sikXQpYf8AL-CFS3NtP1tLLHcguQvUl27houOwMboJlbGfKQwvWeHgiGqTmQ=="
+            },
+            "Discord": {
+                "username": "skibidi",
+                "password": "gAAAAABndj9MAfMyy227GDV7pI4_EDVZMCRa99f4MNIFJpeq0WEbU5S3bOYuBos2vevFAKSjXdvjzPn3Aav3PlND0M1w2j8owg=="
+            }
+        }
+    },
+    "iqanA": {
+        "password": "$2b$12$YeOf6ZbUDMW/CXbGwzvndu3wTRkwg/W7dGGE2sNM4Kn4pZi28RMAm",
+        "salt": "YZsTD5OFaVR3HWDlaSQK3g==",
+        "encrypted_key": "gAAAAABndnB_JW-5EDRD87RoL8H8Cuz6Zum7L1MoQEFCHhmp1t3r1WbAkqUCdvi2pwdfgb-9DboO3LplYm4JN-O7PX19ZUFOEmyFsAVmr3nAfV9xAEAwFmLdQQKm94iA4AJMrbFcOUIe",
+        "accounts": {}
+    },
+    "awooga": {
+        "password": "$2b$12$9lW14Kb6rDIg7Pj3OygKFehbBd1bpd.YOjRgQNAdnscpBXgh37V/y",
+        "salt": "47vj4lYTGfHL5kF5Thp+3w==",
+        "encrypted_key": "gAAAAABndnC2J2HvSg1lcZjRPlLh6P6gm6R717An4aZCX51oSN29YceGrm7xTHeVCXWrqsxjYm2UQ6FiupEeamLgP6eRuTWzPrF77f9oRctG5XfdCovQSyYB_FegsoUsX1fQ-OM2ZKWU",
+        "accounts": {}
+    },
+    "maimai": {
+        "password": "$2b$12$6lzw.nnHiGT0Umxc2.62L.yu3pMb.1C8YRJ5XwSkkxvJWmyteVa72",
+        "salt": "svOlPt6SLVo6z48S2TRxIA==",
+        "encrypted_key": "gAAAAABndo-XJbDp5JbaPP_0ilbAkCVi7I7NrMMCk_OuTmNOuZ87rSyK3S-VlkKGBAoWmJplQL1Hv6IJpmGDRbmpcxREgzYGrh22qecSRmiKpWSE8WqvtitcR9GIel5KfWnS4VO8UX4s",
+        "accounts": {
+            "MaimaiDX": {
+                "username": "ProMaimai23",
+                "password": "gAAAAABndpAC68WlqUQpRKeYarGmP7HrqZyD0c9odngovC6YgrEHqO2TRNZeG_g97_dBJGtnycZETx9Ft32QgMGky1WHrnfUaEqd8A8kRKLwAegIBmPxrUhwv90AaH1dIc8hSmc1nJrOpA8suEwnx-dUqH1Esf_AdIDt6ejrG2qctClDz6rrFGE="
+            }
+        }
+    },
+    "alna": {
+        "password": "$2b$12$j.vQ0qSAe7qPhryiyJdkpeeEDj5dn23A2FKpPSUgAVOOQie1WSNhW",
+        "salt": "qF7snOc3oecA82dWFIKElQ==",
+        "encrypted_key": "gAAAAABndpMwir3sM_ete2p9m9twEvrLwvryF5Dgn7Dag_pZr9SztU7aGZwSVO2ciexwer15wyAc76uYBo9KcUvPmuQ9XS3hSJ6WHmA9EabyuZ9Vtp-OLXeEyVfQ1rU4udoKxwVpsZe5",
         "accounts": {}
     }
 }
