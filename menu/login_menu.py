@@ -1,3 +1,6 @@
+from username.usernameGenerator import usernameGenerator
+from password.passwordGenerator import passwordGenerator
+
 import json
 import os
 import bcrypt
@@ -6,6 +9,7 @@ from cryptography.fernet import Fernet
 from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 import base64
+
 
 DATA_FILE = 'data/users_data.json'
 
@@ -101,9 +105,6 @@ def loginMasterAccount():
         print("Error mendekripsi kunci enkripsi. Silakan coba lagi.")
         return None
 
-def maskPassword(text): # Masking password dengan bintang
-    return '*' * len(text)
-
 def view_item_details(account_name, account_details, username, fernet): # Menampilkan detail item
     data = loadData()
     show_password = False
@@ -116,7 +117,7 @@ def view_item_details(account_name, account_details, username, fernet): # Menamp
         if show_password:
             print(f"Password: {decrypted_password}")
         else:
-            print(f"Password: {maskPassword(decrypted_password)}")
+            print(f"Password: *****")
         
         print("\nOpsi:")
         print("\n1. Tampilkan/Sembunyikan Password")
@@ -152,6 +153,7 @@ def view_item_details(account_name, account_details, username, fernet): # Menamp
                 else:
                     print("Tolong masukkan input yang valid. (y/n)")
         elif choice == '0':
+            os.system('cls')
             return False
         else:
             os.system('cls')
@@ -194,8 +196,29 @@ def view_items(username, fernet):
 def add_item(username, fernet):
     print("\n=== BUAT ITEM BARU ===")
     account_name = input("Masukkan nama akun: ")
-    username_input = input("Masukkan username: ")
-    password = input("Masukkan password: ")
+    usernameInput = ""
+    passwordInput = ""
+
+    while True:
+        confirmUserGen = input("Apakah Anda ingin menerapkan username secara otomatis? (y/n): ")
+        if confirmUserGen.lower() == 'y':
+            usernameInput = usernameGenerator()
+            print("\nGenerated username:", usernameInput)
+            break
+        elif confirmUserGen.lower() == 'n':
+            usernameInput = input("\nMasukkan username: ")
+            break
+        else:
+            print("Tolong masukkan input yang valid. (y/n)")
+
+    while True:
+        confirmPassGen = input("Apakah kamu ingin menerapkan password secara otomatis? (y/n): ")
+        if confirmUserGen.lower() == 'y':
+            passwordInput = passwordGenerator()
+            break
+        elif confirmUserGen.lower() == 'n':
+            passwordInput = input("\nMasukkan password: ")
+            break
 
     data = loadData()
 
@@ -203,9 +226,9 @@ def add_item(username, fernet):
         os.system('cls')
         print("Akun dengan nama tersebut sudah ada. Gunakan nama lain.")
     else:
-        encrypted_password = fernet.encrypt(password.encode()).decode()
+        encrypted_password = fernet.encrypt(passwordInput.encode()).decode()
         data[username]["accounts"][account_name] = {
-            "username": username_input,
+            "username": usernameInput,
             "password": encrypted_password
         }
         saveData(data)
@@ -260,5 +283,5 @@ def main_menu():
             os.system('cls')
             print("Opsi tidak valid. Silakan pilih lagi.")
 
-"""     if __name__ == "__main__":
-        main_menu() """
+if __name__ == "__main__":
+    main_menu()
