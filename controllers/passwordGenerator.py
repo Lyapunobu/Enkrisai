@@ -51,7 +51,7 @@ def inputPasswordLength():
     while True:
         try:
 
-            passwordLength = int(input("Panjang password (8-128): "))
+            passwordLength = int(input("\nPanjang password (8-128): "))
 
             if passwordLength < 8 or passwordLength > 128:
                 print("Tolong masukkan angka dari 8 sampai dengan 128.\n")

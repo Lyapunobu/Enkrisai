@@ -5,12 +5,12 @@ from controllers.passwordGenerator import passwordGenerator
 
 def addItem(username, fernet):
     print("\n=== BUAT ITEM BARU ===")
-    account_name = input("Masukkan nama akun: ")
+    account_name = input("\nMasukkan nama item: ")
     usernameInput = ""
     passwordInput = ""
 
     while True:
-        confirmUserGen = input("Apakah Anda ingin menerapkan username secara otomatis? (y/n): ")
+        confirmUserGen = input("\nApakah Anda ingin menerapkan username secara otomatis? (y/n): ")
         if confirmUserGen.lower() == 'y':
             usernameInput = usernameGenerator()
             print("\nGenerated username:", usernameInput)
@@ -22,7 +22,7 @@ def addItem(username, fernet):
             print("Tolong masukkan input yang valid. (y/n)")
 
     while True:
-        confirmPassGen = input("Apakah kamu ingin menerapkan password secara otomatis? (y/n): ")
+        confirmPassGen = input("\nApakah kamu ingin menerapkan password secara otomatis? (y/n): ")
         if confirmPassGen.lower() == 'y':
             passwordInput = passwordGenerator()
             break

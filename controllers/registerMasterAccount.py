@@ -8,8 +8,20 @@ from controllers.generateKey import generateKey
 def registerMasterAccount():
     os.system('cls')
     print("\n=== REGISTER ENKRISAI ===")
-    username = input("Masukkan username: ")
-    password = input("Masukkan password: ")
+
+    while True:
+        username = input("\nMasukkan username: ").strip()
+        if not username:
+            print("\nUsername tidak boleh kosong. Silakan coba lagi.")
+            continue
+        break
+    
+    while True:
+        password = input("\nMasukkan password: ").strip()
+        if not password:
+            print("\nPassword tidak boleh kosong. Silakan coba lagi.")
+            continue
+        break
 
     data = loadData()
     if username in data:
