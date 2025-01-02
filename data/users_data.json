@@ -69,11 +69,5 @@
         "salt": "qF7snOc3oecA82dWFIKElQ==",
         "encrypted_key": "gAAAAABndpMwir3sM_ete2p9m9twEvrLwvryF5Dgn7Dag_pZr9SztU7aGZwSVO2ciexwer15wyAc76uYBo9KcUvPmuQ9XS3hSJ6WHmA9EabyuZ9Vtp-OLXeEyVfQ1rU4udoKxwVpsZe5",
         "accounts": {}
-    },
-    "": {
-        "password": "$2b$12$Fitz0xdJqrJoR36M2OHUHeEmvQlze9qDI2TTeMN2zuHFwCFQ7rL4G",
-        "salt": "uzISIreH9V3kHegElcb7KA==",
-        "encrypted_key": "gAAAAABndqlREskbLb8E-zrUdJyVsxBQ3kFIsWzJWBscRvwD4s9wsQ3qH3mvhMzfQykIw68gdmxCpSmZo_RCOaneFuE8l4abdoxGrZslWGhTFLbggBAdXeTzoPtJyqvV37d4qVA3eT8k",
-        "accounts": {}
     }
 }
