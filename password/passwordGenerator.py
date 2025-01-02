@@ -89,9 +89,6 @@ def passwordGenerator():
     
     generatedPassword = ''.join(secrets.choice(charset) for i in range(passwordLength))
 
-    pyperclip.copy(generatedPassword)
+    return generatedPassword
 
-    os.system('cls')
-
-    return print(f"\nPassword yang sudah dibuat:\n{generatedPassword}")
     # return print(f"\nPassword yang sudah dibuat:\n{''.join(secrets.choice(charset) for i in range(passwordLength))}")

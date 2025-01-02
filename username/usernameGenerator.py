@@ -43,10 +43,12 @@ def usernameConfig():
         except ValueError:
             print("Input tidak valid, tolong masukkan angka.")
 
-usernameConfig()
+
 
 def usernameGenerator():
     
+    usernameConfig()
+
     komponenUsername = []
 
     if entity:
@@ -68,6 +70,7 @@ def usernameGenerator():
 
     generatedUsername = ''.join(komponenUsername)
 
-    return print(generatedUsername)
+    return generatedUsername
 
-usernameGenerator()
+if __name__ == "__main__":
+    print(usernameGenerator())
