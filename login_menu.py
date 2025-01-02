@@ -1,9 +1,12 @@
 import json
 import os
-from password.passwordManager import password_menu  # Mengimpor fungsi dari passwordManager.py
+import random
+
+from password.passwordManager import password_menu # Mengimpor fungsi dari passwordManager.py
 
 # File untuk menyimpan data pengguna
-USER_DATA_FILE = 'user_data.json'
+USER_DATA_FILE = 'data/user_data.json'
+choice = 0
 
 # Fungsi untuk memuat data pengguna dari file JSON
 def load_user_data():
@@ -107,5 +110,5 @@ def main_menu():
         else:
             print("Opsi tidak valid. Silakan pilih lagi.")
 
-if __name__ == "__main__":
-    main_menu()
+# if __name__ == "__main__":
+main_menu()
