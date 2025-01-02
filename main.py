@@ -1,3 +1,8 @@
 import os
+from menu.login_menu import main_menu
 
-os.system("password_generator.py")
+if __name__ == "__main__":
+    os.system('cls')
+    main_menu()
+
+# RAAAAAAAAAAAAAAAAAAAAAAAAH
