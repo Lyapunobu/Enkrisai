@@ -1,0 +1,8 @@
+{
+    "123": {
+        "password": "$2b$12$Ty6j/nOIVNdCFjQ6zhRpHehjef.i/QbjBQ4HhtVtRnCR/lX3qmI4S",
+        "salt": "hP79c1dRZs8ZiclR78CE2Q==",
+        "encrypted_key": "gAAAAABndhveAaIFdGFQ4Gk1vl08yFO6tQmX0Kt18w9wBPH7i5ONRrU8hbznk0a8cr_ykB5QAOzXjJhDc6zvRxzB3bu7OBBfKySZ6P4XdRZMUeeoXZK4cOxsH_9NLQQBjMyqtiAwZCjy",
+        "accounts": {}
+    }
+}
