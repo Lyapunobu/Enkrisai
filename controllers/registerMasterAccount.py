@@ -18,7 +18,7 @@ def registerMasterAccount():
         break
     
     while True:
-        password = pwinput.pwinput("\nMasukkan password: ").strip()
+        password = pwinput.pwinput("Masukkan password: ").strip()
         if not password:
             print("\nPassword tidak boleh kosong. Silakan coba lagi.")
             continue

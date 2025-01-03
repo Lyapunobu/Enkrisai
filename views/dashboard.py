@@ -5,7 +5,7 @@ from controllers.masterAccountSettings import masterAccountSettings
 
 def dashboard(username, fernet):
    while True:
-       print("\n=== MENU ENKRISAI ===")
+       print("\n=== DASHBOARD ENKRISAI ===")
        print("\n1. Lihat Brankas Enkrisai")
        print("2. Buat Item Baru")
        print("3. Master Account Settings")
