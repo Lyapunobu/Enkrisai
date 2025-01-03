@@ -9,6 +9,7 @@ from controllers.generateKey import generateKey
 def masterAccountSettings(username, fernet):
    while True:
        print("\n=== MASTER ACCOUNT SETTINGS ===")
+       print(f"\nMaster Account Username: {username}")
        print("\n1. Ganti Master Username")
        print("2. Ganti Master Password")
        print("3. Hapus Master Account")
@@ -20,10 +21,10 @@ def masterAccountSettings(username, fernet):
            while True:
                newUsername = input("\nMasukkan username baru: ").strip()
                if not newUsername:
-                   print("Username tidak boleh kosong!")
+                   print("Master username tidak boleh kosong!")
                    continue
                if newUsername in data:
-                   print("Username sudah digunakan. Silakan pilih username lain.")
+                   print("Master username sudah digunakan. Silakan pilih username lain.")
                    continue
                    
                # Salin data ke username baru
@@ -32,17 +33,18 @@ def masterAccountSettings(username, fernet):
                del data[username]
                saveData(data)
                os.system('cls')
-               print("Username berhasil diubah!")
+               print("Master username berhasil diubah!")
                return newUsername  # Return username baru ke dashboard
                
        elif choice == '2':
            data = loadData()
            while True:
-               currentPassword = pwinput.pwinput("\nMasukkan password saat ini: ")
+               currentPassword = pwinput.pwinput("\nMasukkan master password saat ini: ")
 
                if not bcrypt.checkpw(currentPassword.encode(), data[username]["password"].encode()):
-                    print("Password salah!")
-                    continue
+                    os.system('cls')
+                    print("Master password salah!")
+                    break
 
                newPassword = pwinput.pwinput("\nMasukkan password baru: ")
                if not newPassword:
@@ -61,7 +63,6 @@ def masterAccountSettings(username, fernet):
                newPersonalKey = Fernet.generate_key()
                newEncryptedPersonalKey = newMasterFernet.encrypt(newPersonalKey)
 
-               ######################## UNDONE ###########################
                data[username].update({
                     "password": bcrypt.hashpw(newPassword.encode(), bcrypt.gensalt()).decode(),
                     "salt": base64.b64encode(newSalt).decode(),
@@ -69,12 +70,12 @@ def masterAccountSettings(username, fernet):
                 })
                saveData(data)
                os.system('cls')
-               print("Password berhasil diubah!")
+               print("Master password berhasil diubah!")
                break
                
        elif choice == '3':
             data = loadData()
-            print("\nPERINGATAN: Menghapus master account akan menghapus semua data yang tersimpan!")
+            print("\nPERINGATAN: Menghapus master account akan menghapus semua data yang tersimpan!!!")
             print("Ketik 'HAPUS' untuk konfirmasi pertama.")
             confirm1 = input("Konfirmasi: ")
             
@@ -94,8 +95,12 @@ def masterAccountSettings(username, fernet):
                         return None
                     else:
                         os.system('cls')
-                        print("Password salah. Penghapusan master account dibatalkan.")
+                        print("Master password salah. Penghapusan master account dibatalkan.")
                         continue
+                else:
+                    os.system('cls')
+                    print("Master username salah. Penghapusan master account dibatalkan.")
+                    continue
                     
             os.system('cls')
             print("Penghapusan master account dibatalkan.")
