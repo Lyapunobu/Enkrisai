@@ -1,0 +1,8 @@
+{
+    "admin": {
+        "password": "$2b$12$Wb25RvfW8KJal3DA3rjJn.9DWYY3gwQ8Rz3Z7Qa3tsO/NQnVJICky",
+        "salt": "cPp6FEWnu4UKTGtdMELkGw==",
+        "encrypted_key": "gAAAAABnd_xhmwbz5IX5mLUaSvIzncFOvubnigWBmGDg8XBQFeB6UcQGi7TwWQdaYJGXQubLmc9CoNFVDOTwrLYDdriCFPBuf-2cZmqE3ULx5Vmv-01iwr9UHqG5XMSqWQ97DhV13eMg",
+        "items": {}
+    }
+}
