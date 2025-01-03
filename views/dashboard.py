@@ -27,7 +27,7 @@ def dashboard(username, fernet):
                username = result
        elif choice == '0':
            os.system('cls')
-           print("Log out dari password manager.")
+           print("Logout dari Enkrisai...")
            break
        else:
            os.system('cls')
