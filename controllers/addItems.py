@@ -1,11 +1,19 @@
 import os
+import pwinput
 from models.dataModel import saveData, loadData
 from controllers.usernameGenerator import usernameGenerator
 from controllers.passwordGenerator import passwordGenerator
 
 def addItem(username, fernet):
     print("\n=== BUAT ITEM BARU ===")
-    account_name = input("\nMasukkan nama item: ")
+    
+    while True:
+        itemName = input("\nMasukkan nama item: ").strip()
+        if not itemName:
+            print("\nNama item tidak boleh kosong. Silakan coba lagi.")
+            continue
+        break
+
     usernameInput = ""
     passwordInput = ""
 
@@ -27,19 +35,21 @@ def addItem(username, fernet):
             passwordInput = passwordGenerator()
             break
         elif confirmPassGen.lower() == 'n':
-            passwordInput = input("\nMasukkan password: ")
+            passwordInput = pwinput.pwinput("\nMasukkan password: ")
             break
+        else:
+            print("Tolong masukkan input yang valid. (y/n)")
 
     data = loadData()
 
-    if account_name in data[username]["accounts"]:
+    if itemName in data[username]["items"]:
         os.system('cls')
-        print("Akun dengan nama tersebut sudah ada. Gunakan nama lain.")
+        print("Item dengan nama tersebut sudah ada. Gunakan nama lain.")
     else:
-        encrypted_password = fernet.encrypt(passwordInput.encode()).decode()
-        data[username]["accounts"][account_name] = {
+        encryptedPassword = fernet.encrypt(passwordInput.encode()).decode()
+        data[username]["items"][itemName] = {
             "username": usernameInput,
-            "password": encrypted_password
+            "password": encryptedPassword
         }
         saveData(data)
         os.system('cls')

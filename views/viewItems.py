@@ -6,18 +6,18 @@ def viewItems(username, fernet):
     while True:
         print("\n=== BRANKAS ENKRISAI ===")
         data = loadData()
-        accounts = data[username]["accounts"]
+        items = data[username]["items"]
         
-        if not accounts:
+        if not items:
             print("Belum ada item.")
             return
 
         print("\nDaftar Item:")
-        for i, account_name in enumerate(accounts.keys(), 1):
-            print(f"{i}. {account_name}")
+        for i, itemName in enumerate(items.keys(), 1):
+            print(f"{i}. {itemName}")
         print("\n0. Kembali ke Menu Utama")
         
-        choice = input("\nPilih nomor akun (0-" + str(len(accounts)) + "): ")
+        choice = input("\nPilih nomor akun (0-" + str(len(items)) + "): ")
         
         if choice == '0':
             os.system('cls')
@@ -25,10 +25,10 @@ def viewItems(username, fernet):
         
         try:
             os.system('cls')
-            acc_num = int(choice)
-            if 1 <= acc_num <= len(accounts):
-                account_name = list(accounts.keys())[acc_num - 1]
-                account_deleted = viewItemDetails(account_name, accounts[account_name], username, fernet)
+            accNum = int(choice)
+            if 1 <= accNum <= len(items):
+                itemName = list(items.keys())[accNum - 1]
+                account_deleted = viewItemDetails(itemName, items[itemName], username, fernet)
                 if account_deleted:
                     continue
             else:

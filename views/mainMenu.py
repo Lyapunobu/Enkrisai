@@ -3,7 +3,7 @@ from views.dashboard import dashboard
 from controllers.loginMasterAccount import loginMasterAccount
 from controllers.registerMasterAccount import registerMasterAccount
 
-def main_menu():
+def mainMenu():
     while True:
         print("\n=== SELAMAT DATANG DI ENKRISAI ===")
         print("\n1. Login")
@@ -13,9 +13,9 @@ def main_menu():
 
         if choice == '1':
             os.system('cls')
-            login_result = loginMasterAccount()
-            if login_result:
-                username, fernet = login_result
+            loginResult = loginMasterAccount()
+            if loginResult:
+                username, fernet = loginResult
                 os.system('cls')
                 print("Login berhasil! Selamat datang di Enkrisai.")
                 dashboard(username, fernet)
@@ -28,6 +28,3 @@ def main_menu():
         else:
             os.system('cls')
             print("Opsi tidak valid. Silakan pilih lagi.")
-
-"""     if __name__ == "__main__":
-        main_menu() """

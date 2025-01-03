@@ -1,14 +1,16 @@
 import os
 import base64
 import bcrypt
+import pwinput
 from cryptography.fernet import Fernet
 from models.dataModel import loadData
 from controllers.generateKey import generateKey
 
 def loginMasterAccount():
     print("\n=== LOGIN ENKRISAI ===")
+
     username = input("Masukkan username: ")
-    password = input("Masukkan password: ")
+    password = pwinput.pwinput("Masukkan password: ")
 
     data = loadData()
     if username not in data:
@@ -24,14 +26,14 @@ def loginMasterAccount():
 
     # Mengambil salt dan derive key
     salt = base64.b64decode(data[username]["salt"])
-    user_key, _ = generateKey(password, salt)
+    userKey, _ = generateKey(password, salt)
     
     # Mendekripsi kunci enkripsi personal pengguna
-    master_fernet = Fernet(user_key)
+    masterFernet = Fernet(userKey)
     
     try:
-        personal_key = master_fernet.decrypt(data[username]["encrypted_key"].encode())
-        return username, Fernet(personal_key)
+        personalKey = masterFernet.decrypt(data[username]["encrypted_key"].encode())
+        return username, Fernet(personalKey)
     except Exception:
         print("Error mendekripsi kunci enkripsi. Silakan coba lagi.")
         return None

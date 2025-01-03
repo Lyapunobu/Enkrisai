@@ -54,13 +54,13 @@ def inputPasswordLength():
             passwordLength = int(input("\nPanjang password (8-128): "))
 
             if passwordLength < 8 or passwordLength > 128:
-                print("Tolong masukkan angka dari 8 sampai dengan 128.\n")
+                print("Tolong masukkan angka dari 8 sampai dengan 128.")
                 continue
             else:
                 break
         
         except ValueError:
-            print("Tolong masukkan angka dari 8 sampai dengan 128.\n")
+            print("Tolong masukkan angka dari 8 sampai dengan 128.")
     return passwordLength
 
 def passwordGenerator():
