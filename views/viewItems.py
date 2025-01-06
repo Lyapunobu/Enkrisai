@@ -28,8 +28,8 @@ def viewItems(username, fernet):
             accNum = int(choice)
             if 1 <= accNum <= len(items):
                 itemName = list(items.keys())[accNum - 1]
-                account_deleted = viewItemDetails(itemName, items[itemName], username, fernet)
-                if account_deleted:
+                accountDeleted = viewItemDetails(itemName, items[itemName], username, fernet)
+                if accountDeleted:
                     continue
             else:
                 print("Nomor akun tidak valid.")
