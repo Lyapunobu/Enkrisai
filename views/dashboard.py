@@ -20,7 +20,7 @@ def dashboard(username, fernet):
            addItem(username, fernet)
        elif choice == '3':
            os.system('cls')
-           result = masterAccountSettings(username, fernet)
+           result = masterAccountSettings(username)
            if result is None:
                break
            elif result != username:
