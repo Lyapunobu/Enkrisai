@@ -9,8 +9,8 @@ from controllers.generateKey import generateKey
 def loginMasterAccount():
     print("\n=== LOGIN ENKRISAI ===")
 
-    username = input("Masukkan username: ")
-    password = pwinput.pwinput("Masukkan password: ")
+    username = input("Masukkan username: ").strip()
+    password = pwinput.pwinput("Masukkan password: ").strip()
 
     data = loadData()
     if username not in data:
