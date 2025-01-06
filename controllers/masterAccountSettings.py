@@ -6,7 +6,7 @@ from models.dataModel import saveData, loadData
 from cryptography.fernet import Fernet
 from controllers.generateKey import generateKey
 
-def masterAccountSettings(username, fernet):
+def masterAccountSettings(username):
    while True:
        print("\n=== MASTER ACCOUNT SETTINGS ===")
        print(f"\nMaster Account Username: {username}")
@@ -27,14 +27,13 @@ def masterAccountSettings(username, fernet):
                    print("Master username sudah digunakan. Silakan pilih username lain.")
                    continue
                    
-               # Salin data ke username baru
                data[newUsername] = data[username].copy()
-               # Hapus data username lama
+
                del data[username]
                saveData(data)
                os.system('cls')
                print("Master username berhasil diubah!")
-               return newUsername  # Return username baru ke dashboard
+               return newUsername
                
        elif choice == '2':
            data = loadData()
