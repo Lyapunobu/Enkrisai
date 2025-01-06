@@ -4,16 +4,5 @@
         "salt": "cPp6FEWnu4UKTGtdMELkGw==",
         "encrypted_key": "gAAAAABnd_xhmwbz5IX5mLUaSvIzncFOvubnigWBmGDg8XBQFeB6UcQGi7TwWQdaYJGXQubLmc9CoNFVDOTwrLYDdriCFPBuf-2cZmqE3ULx5Vmv-01iwr9UHqG5XMSqWQ97DhV13eMg",
         "items": {}
-    },
-    "123": {
-        "password": "$2b$12$pIygPDGlNKMnQgt1lAn43.ml669jJOrTkV9adNeMrlxQHbVeXXLbO",
-        "salt": "FiXERGvXTTZwgD+k+N2gQA==",
-        "encrypted_key": "gAAAAABne5CaUT8FbvVioA--9md0DKLoE__Rbf7CMNFD_VDpN9QQgJyuB6JyIu5BQLbdQwzW4G8VByeMvtphnGguBNzHtpmHJFp74Nk21wkmIBO5QjjAHK2PWEBZF2UZYWMNB08dm81U",
-        "items": {
-            "Google": {
-                "username": "KuraKuraJujur40",
-                "password": "gAAAAABne5BneKca1ceAHdTNFGNbwRoBBVFY_3dCNeEd6ZdSr6f-8HcfnQz23RP7uH8hIboVuV2DpWezbj5azGWmuATJ2iC9PzGh94kbIUMwzL3ZcR8RHkpI74EGLEIeytJDfnA27CW5"
-            }
-        }
     }
 }
